@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h2> Q1 3rd Graded Exercise submitted by Evan Catriz of 9Cesium</h2>
+    <label>Meal Price:
+        <input id="mealPrice" />
+    </label><br>
+    <label>Tip:
+        <input id="tip" />
+    </label><br>
+    <label>Service Charge:
+        <input id="serviceCharge" />
+    </label> <br>
+
+    <button onclick="totalMeal()"> Accept Input </button>
+    <p>Total Meal: </p>
+
+    <script>
+        function totalMeal() {
+              let mPrice = mealPrice.value
+              let tPrice = tip.value
+              let sChange = serviceCharge.value
+
+              let tMealPrice = mPrice + tPrice + sChange
+              document.write(tMealPrice.toFixed(2));
+         
+        }
+    </script>
+
+</body>
+</html>
